@@ -793,7 +793,7 @@
             },
             "Visible": {
               "Formula": {
-                "Expression": "if ( ld_getSim() == 'IRacing' ) {\r\n\treturn ( $prop('Flag_Yellow') || $prop('GameRawData.Graphics.globalYellow') ) ? 1 : 0\r\n} else if ( ld_getSim() == 'ACC' ) {\r\n\treturn ( $prop('Flag_Yellow') && $prop('DataCorePlugin.GameRawData.Graphics.FlagsDetails.IsACC_YELLOW_FLAG') ) ? 1 : 0\r\n} else if ( ld_getSim() == 'AC' ) {\r\n\treturn ( $prop('Flag_Yellow') ) ? 1 : 0\r\n} else {\r\n\treturn 0\r\n}",
+                "Expression": "if ( ld_getSim() == 'IRacing' ) {\r\n\treturn ( $prop('Flag_Yellow') || $prop('GameRawData.Graphics.globalYellow') ) ? 1 : 0;\r\n} else if ( ld_getSim() == 'ACC' ) {\r\n\treturn ( $prop('Flag_Yellow') && $prop('DataCorePlugin.GameRawData.Graphics.FlagsDetails.IsACC_YELLOW_FLAG') ) ? 1 : 0;\r\n} else {\r\n\treturn $prop('Flag_Yellow');\r\n}",
                 "Interpreter": 1,
                 "JSExt": 3
               },
